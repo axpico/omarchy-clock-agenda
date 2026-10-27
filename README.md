@@ -21,17 +21,15 @@ Google Calendar is optional: without it the plugin works as a plain clock and ca
 omarchy plugin add https://github.com/axpico/omarchy-clock-agenda --enable
 ```
 
-Then swap `omarchy.clock` for `axpico.clock` in the bar in `~/.config/omarchy/shell.json`.
-If `centerAnchor` points at the clock, update it too:
+Enabling it replaces `omarchy.clock` in the bar, in the same spot and with the same `format`.
+If asked which bar section to use, pick `center` to keep the clock where it was.
+
+The swap does not touch `centerAnchor`. If it points at the clock, update it in
+`~/.config/omarchy/shell.json`:
 
 ```json
 "bar": {
-  "centerAnchor": "axpico.clock",
-  "layout": {
-    "center": [
-      { "id": "axpico.clock", "format": "dddd HH:mm", "formatAlt": "d MMMM 'W'ww yyyy" }
-    ]
-  }
+  "centerAnchor": "axpico.clock"
 }
 ```
 
@@ -136,7 +134,8 @@ and delete `~/.local/share/gcalcli/oauth`.
 omarchy plugin remove axpico.clock
 ```
 
-Then put `omarchy.clock` back in the bar (and `centerAnchor`) in `~/.config/omarchy/shell.json`.
+This puts `omarchy.clock` back in the bar. Set `centerAnchor` back to `omarchy.clock` in
+`~/.config/omarchy/shell.json` if you changed it.
 
 ## License
 

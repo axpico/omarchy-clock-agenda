@@ -16,5 +16,8 @@
     "description": "Clock with a month calendar and a Google Calendar agenda popup",
     "category": "Time",
     "allowMultiple": false
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.clock"
   }
 }
