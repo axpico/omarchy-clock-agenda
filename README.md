@@ -3,6 +3,8 @@
 An Omarchy bar clock whose popup shows a month calendar with ISO week numbers
 and your Google Calendar events.
 
+![Clock & Agenda popup with a month calendar and the day's events](preview.png)
+
 - Days get a colored dot per event, in the event's Google Calendar color; hover to list them.
 - Below the month: an agenda of the next seven days, or the events of a clicked day,
   with time range, location, calendar, description, and video-call link
