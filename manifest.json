@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "axpico.clock",
+  "name": "Clock & Agenda",
+  "version": "1.0.0",
+  "author": "Alessandro Picone",
+  "description": "Clock with a month calendar and a Google Calendar agenda popup",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Clock & Agenda",
+    "description": "Clock with a month calendar and a Google Calendar agenda popup",
+    "category": "Time",
+    "allowMultiple": false
+  }
+}
