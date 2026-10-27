@@ -179,7 +179,7 @@ Panel {
   // moved in the meantime.
   function loadEvents() {
     if (eventsProc.running) return
-    eventsProc.command = ["python3", String(Qt.resolvedUrl("gcal-events.py")).replace("file://", "")].concat(eventsRange())
+    eventsProc.command = ["/usr/bin/python3", String(Qt.resolvedUrl("gcal-events.py")).replace("file://", "")].concat(eventsRange())
     eventsProc.running = true
   }
 

@@ -74,6 +74,8 @@ def main(start, end):
     """Print the events from `start` (inclusive) to `end` (exclusive)."""
     # Access tokens last about an hour; refresh with the stored refresh
     # token and save the result back, the same way gcalcli does.
+    if not TOKEN.exists():
+        sys.exit(f"No gcalcli login at {TOKEN}. Run: gcalcli --client-id=<ID> init (see README).")
     with TOKEN.open("rb") as f:
         creds = pickle.load(f)
     if not creds.valid:
